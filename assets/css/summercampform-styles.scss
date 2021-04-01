@@ -1,0 +1,31 @@
+$tabwidth: 700px;
+
+.cf-forms {
+    width: 100%;
+    float: left;
+    
+    @media screen and (min-width: $tabwidth) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: row;
+    }
+    a {
+        text-decoration: none;
+    }
+    .cf-form {
+        text-align: center;
+        flex-basis: 20%;
+    }
+    .cf-icon {
+        width: 50%;
+        margin: 0 auto 20px auto;
+        img {
+            width: 100%;
+        }
+    }
+    h3.cf-title {
+        font-size: 24px;
+    }
+}
