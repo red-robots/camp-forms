@@ -7,7 +7,7 @@ $tabwidth: 700px;
     @media screen and (min-width: $tabwidth) {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: stretch;
         flex-direction: row;
     }
@@ -26,6 +26,6 @@ $tabwidth: 700px;
         }
     }
     h3.cf-title {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
