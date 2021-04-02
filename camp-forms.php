@@ -15,6 +15,45 @@ Author URI: https://bellaworksweb.com
  * 
  * 
  */
+
+
+/**
+ * Temporary hook into title to display Title on Calendar Page
+ * 
+    
+ */
+/**
+ * Defines alternative titles for various event views.
+ *
+ * @param  string $title
+ * @return string
+ */
+function ac_lets_add_the_cal_title( $title ) {
+	// global $post;
+	// $pageID = $post->ID;
+
+	if( is_post_type_archive('tribe_events') ) {
+		$title = 'Calendar';
+	}
+   
+
+    return $title;
+}
+add_filter( 'the_title', 'ac_lets_add_the_cal_title' );
+/**
+ * Modifes the event <title&gt; element.
+ *
+ * Users of Yoast's SEO plugin may wish to try replacing the below line with:
+ *
+ *     add_filter('wpseo_title', 'filter_events_title' );
+ */
+add_filter( 'tribe_events_title_tag', 'filter_events_title' );
+
+/**
+ *  Summer Camp Forms
+ * 
+     
+ */
  
 add_action('wp_enqueue_scripts', 'summercamp_style');
 
