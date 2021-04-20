@@ -28,18 +28,7 @@ Author URI: https://bellaworksweb.com
  * @param  string $title
  * @return string
  */
-function ac_lets_add_the_cal_title( $title ) {
-	// global $post;
-	// $pageID = $post->ID;
 
-	if( is_post_type_archive('tribe_events') ) {
-		$title = 'Calendar';
-	}
-   
-
-    return $title;
-}
-add_filter( 'the_title', 'ac_lets_add_the_cal_title' );
 /**
  * Modifes the event <title&gt; element.
  *
