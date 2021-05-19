@@ -47,7 +47,7 @@ add_filter( 'tribe_events_title_tag', 'filter_events_title' );
 add_action('wp_enqueue_scripts', 'summercamp_style');
 
 function summercamp_style() {
-	wp_register_style( 'summercampform-styles',  plugin_dir_url( __FILE__ ) . 'summercampform-styles.css' );
+	wp_register_style( 'summercampform-styles',  plugin_dir_url( __FILE__ ) . 'summercampform-styles.css?v=1.2' );
     wp_enqueue_style( 'summercampform-styles' );
 }
 /**
