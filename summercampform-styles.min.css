@@ -1,6 +1,7 @@
-.cf-forms{width:100%;float:left}
+.cf-forms{width:100%;float:left;padding:40px 0}
 .cf-forms a{text-decoration:none}
-.cf-forms .cf-form{text-align:center;-ms-flex-preferred-size:20%;flex-basis:20%}
+.cf-forms .cf-form{text-align:center;-ms-flex-preferred-size:20%;flex-basis:20%;-webkit-transform:scale(0.7);transform:scale(0.7);background-color:white;padding:20px;-webkit-box-shadow:0 0 22px -9px rgba(0,0,0,0.1);box-shadow:0 0 22px -9px rgba(0,0,0,0.1);-webkit-transition:all ease .2s;transition:all ease .2s}
+.cf-forms .cf-form:hover{-webkit-transform:scale(0.8);transform:scale(0.8);-webkit-box-shadow:0 0 22px -9px rgba(0,0,0,0.36);box-shadow:0 0 22px -9px rgba(0,0,0,0.36)}
 .cf-forms .cf-icon{width:50%;margin:0 auto 20px auto}
 .cf-forms .cf-icon img{width:100%}
 .cf-forms h3.cf-title{font-size:20px}

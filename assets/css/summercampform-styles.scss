@@ -3,7 +3,7 @@ $tabwidth: 700px;
 .cf-forms {
     width: 100%;
     float: left;
-    
+    padding: 40px 0;
     @media screen and (min-width: $tabwidth) {
         display: flex;
         flex-wrap: nowrap;
@@ -17,6 +17,19 @@ $tabwidth: 700px;
     .cf-form {
         text-align: center;
         flex-basis: 20%;
+        transform: scale(.7);
+        background-color: rgba(#fff, 1);
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 22px -9px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0px 22px -9px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 22px -9px rgba(0,0,0,0.1);
+        transition: all ease .2s;
+        &:hover {
+            transform: scale(.8);
+            -webkit-box-shadow: 0px 0px 22px -9px rgba(0,0,0,0.36);
+            -moz-box-shadow: 0px 0px 22px -9px rgba(0,0,0,0.36);
+            box-shadow: 0px 0px 22px -9px rgba(0,0,0,0.36);
+        }
     }
     .cf-icon {
         width: 50%;
